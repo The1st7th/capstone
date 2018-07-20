@@ -5,10 +5,10 @@ export default () => {
   return (
     <div className="container">
         <div className="row">
-            <div className="col-4">
+            <div className="col-md-2">
                 <div className="card">
                     <div className="card-body">
-                        <div className="card-title">Global Chat</div>
+                        <div className="card-title">ChatBox</div>
                         <hr/>
 
                     </div>
