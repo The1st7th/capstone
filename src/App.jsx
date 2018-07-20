@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
-import chatbox from  './chatbox';
-import data from './data';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Main from './main';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
 
+const store = createStore();
 class App extends Component {
   render() {
     return (
-  <div>
-  <chatbox />
-  <data />
-  </div>
+  <BrowserRouter>
+  <Provider store={store}>
+  <Route exact path="/" component={Main}/>
+  </Provider>
+  </BrowserRouter>
     );
   }
 }

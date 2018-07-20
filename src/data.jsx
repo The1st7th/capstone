@@ -5,7 +5,7 @@ export default class data extends Component {
   render() {
     return (
       <div>
-        
+        hello
       </div>
     )
   }
