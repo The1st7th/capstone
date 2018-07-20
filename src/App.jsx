@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Main from './main';
@@ -8,14 +6,14 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
 
-const store = createStore();
+// const store = createStore();
 class App extends Component {
   render() {
     return (
   <BrowserRouter>
-  <Provider store={store}>
+  {/* <Provider store={store}> */}
   <Route exact path="/" component={Main}/>
-  </Provider>
+  {/* </Provider> */}
   </BrowserRouter>
     );
   }
