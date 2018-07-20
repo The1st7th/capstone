@@ -5,12 +5,15 @@ export default () => {
   return (
     <div className="container">
         <div className="row">
-            <div className="col-md-2">
+            <div className="col-md-6">
                 <div className="card">
                     <div className="card-body">
                         <div className="card-title">ChatBox</div>
                         <hr/>
-
+                       <div>messages here </div>
+                       <div>messages here </div>
+                       <div>messages here </div>
+                       <div>messages here </div>
                     </div>
                     <div className="card-footer">
                         <input type="text" placeholder="Username" value=""  className="form-control"/>
