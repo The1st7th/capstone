@@ -33,7 +33,7 @@ addmessage(){
 post(){
     var temp=[];
     for (var i = 0; i < this.state.messages.length;i++){
-        temp.push(<div>{this.state.messages[i]}</div>);
+        temp.push(<div>{this.state.username}    :{this.state.messages[i]}</div>);
     }
     return temp;
 //     var messages= [];
